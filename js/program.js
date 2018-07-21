@@ -132,3 +132,47 @@ function returnNumbers() {
   return numbers;
 }
 console.log(returnNumbers());
+
+
+//--------------------------------015-------------------------------------
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " +( a=b ) + ", a ia valoarea lui b. Invers, b=a ar returna 1; in cazul asta b ar lua valoarea lui a!");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza "+ (a==b) + ", deoarece verifica egalitatea ca valoare, daca b=1 ar returna true, cele doua valori fiind egale")
+
+var a=1;
+var b=2;
+var c= true;
+
+console.log("Returneaza " + (a===b) + ", deoarece verifica in acelasi timp atat egalitatea ca si valoare si ca tip de date.");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " + (a==c) +", deoarece in javascript tipurile boolean(true and false) au si valori numerice, mai exact true=1, false=0");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " + (a===c) +", deoarece sunt doua tipuri diferite de date, numeric si boolean");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " + (a>b) +", deoarece a este mai mic ca b");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " + (a<b) +", deoarece a este mai mic ca b");
+
+var a=1;
+var b=2;
+var c= true;
+console.log("Returneaza " + (a >= b) +", deoarece a este mai mic ca b si a nu este nici egal cu b");
