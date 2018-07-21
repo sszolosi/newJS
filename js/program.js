@@ -176,3 +176,19 @@ var a=1;
 var b=2;
 var c= true;
 console.log("Returneaza " + (a >= b) +", deoarece a este mai mic ca b si a nu este nici egal cu b");
+
+
+//--------------------------------016-------------------------------------
+
+function unParametru(x){
+  if (x < 10) {
+    return  "Numar mic";
+} else if (x > 10) {
+    return  "Numar mare";
+} else {
+    return  "Parametrul nu este nu numar";
+}
+};
+console.log(unParametru(99));
+console.log(unParametru(5));
+console.log(unParametru("text"));
