@@ -136,70 +136,110 @@ console.log(returnNumbers());
 
 //--------------------------------015-------------------------------------
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " +( a=b ) + ", a ia valoarea lui b. Invers, b=a ar returna 1; in cazul asta b ar lua valoarea lui a!");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a = b) + ", a ia valoarea lui b. Invers, b=a ar returna 1; in cazul asta b ar lua valoarea lui a!");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza "+ (a==b) + ", deoarece verifica egalitatea ca valoare, daca b=1 ar returna true, cele doua valori fiind egale")
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a == b) + ", deoarece verifica egalitatea ca valoare, daca b=1 ar returna true, cele doua valori fiind egale")
 
-var a=1;
-var b=2;
-var c= true;
+var a = 1;
+var b = 2;
+var c = true;
 
-console.log("Returneaza " + (a===b) + ", deoarece verifica in acelasi timp atat egalitatea ca si valoare si ca tip de date.");
+console.log("Returneaza " + (a === b) + ", deoarece verifica in acelasi timp atat egalitatea ca si valoare si ca tip de date.");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " + (a==c) +", deoarece in javascript tipurile boolean(true and false) au si valori numerice, mai exact true=1, false=0");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a == c) + ", deoarece in javascript tipurile boolean(true and false) au si valori numerice, mai exact true=1, false=0");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " + (a===c) +", deoarece sunt doua tipuri diferite de date, numeric si boolean");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a === c) + ", deoarece sunt doua tipuri diferite de date, numeric si boolean");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " + (a>b) +", deoarece a este mai mic ca b");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a > b) + ", deoarece a este mai mic ca b");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " + (a<b) +", deoarece a este mai mic ca b");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a < b) + ", deoarece a este mai mic ca b");
 
-var a=1;
-var b=2;
-var c= true;
-console.log("Returneaza " + (a >= b) +", deoarece a este mai mic ca b si a nu este nici egal cu b");
+var a = 1;
+var b = 2;
+var c = true;
+console.log("Returneaza " + (a >= b) + ", deoarece a este mai mic ca b si a nu este nici egal cu b");
 
 
 //--------------------------------016-------------------------------------
 
-function unParametru(x){
+function unParametru(x) {
   if (x < 10) {
-    return  "Numar mic";
-} else if (x > 10) {
-    return  "Numar mare";
-} else {
-    return  "Parametrul nu este nu numar";
-}
+    return "Numar mic";
+  } else if (x > 10) {
+    return "Numar mare";
+  } else {
+    return "Parametrul nu este nu numar";
+  }
 };
 console.log(unParametru(99));
 console.log(unParametru(5));
 console.log(unParametru("text"));
 
 //--------------------------------017-------------------------------------
-var a=3601;
-var i=0;
-number=[];
-for (i; i<=a; i++){
-    number.push(i);
+var a = 3601;
+var i = 0;
+number = [];
+for (i; i <= a; i++) {
+  number.push(i);
 };
 document.write(number);
 document.write("<br>");
+
 //--------------------------------018-------------------------------------
+
+//for loop
+
+var a = 10;
+var i = 1;
+number = [];
+for (i; i <= a; i++) {
+  number.push(i);
+};
+document.write(number.join("-") + " : for loop");
+document.write("<br>");
+
+//while loop
+
+var a = 10;
+var i = 1;
+number = [];
+
+while (i <= a) {
+  number.push(i);
+  i++;
+};
+document.write(number.join("-") + " : while loop");
+document.write("<br>");
+
+// do while loop
+
+var a = 10;
+var i = 1;
+number = [];
+
+do {
+  number.push(i);
+  i++;
+}
+while (i <= a);
+
+document.write(number.join("-") + " : do while loop");
+document.write("<br>");
