@@ -243,3 +243,21 @@ while (i <= a);
 
 document.write(number.join("-") + " : do while loop");
 document.write("<br>");
+
+//--------------------------------019-------------------------------------
+
+var a = 10;
+var i = 1;
+numere = [];
+
+function afiseaza() {
+  for (i; i <= a; i++) {
+    numere.push(i);
+  }
+  return numere;
+
+};
+document.write(afiseaza().join("."));
+document.write("<br>");
+
+//--------------------------------020-------------------------------------
