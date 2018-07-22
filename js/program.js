@@ -261,3 +261,19 @@ document.write(afiseaza().join("."));
 document.write("<br>");
 
 //--------------------------------020-------------------------------------
+
+var a;
+var b;
+var minmax = [];
+
+function afiseazaMinMax(a, b) {
+  for (a; a <= b; a++) {
+    minmax.push(a);
+  }
+  return minmax;
+};
+
+document.write(afiseazaMinMax(9, 99).join("."));
+document.write("<br>");
+
+//--------------------------------021-------------------------------------
