@@ -192,3 +192,14 @@ function unParametru(x){
 console.log(unParametru(99));
 console.log(unParametru(5));
 console.log(unParametru("text"));
+
+//--------------------------------017-------------------------------------
+var a=3601;
+var i=0;
+number=[];
+for (i; i<=a; i++){
+    number.push(i);
+};
+document.write(number);
+document.write("<br>");
+//--------------------------------018-------------------------------------
