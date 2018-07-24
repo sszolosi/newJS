@@ -277,3 +277,16 @@ document.write(afiseazaMinMax(9, 99).join("."));
 document.write("<br>");
 
 //--------------------------------021-------------------------------------
+
+function afiseazaNoLoop(x){
+  console.log(x);
+  console.log(typeof x);
+  document.write((x)+"-");
+  if(x!=0) {
+      afiseazaNoLoop(x-1);
+  }
+  else{
+    return x;
+  }
+};
+afiseazaNoLoop(10);
