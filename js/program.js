@@ -278,15 +278,39 @@ document.write("<br>");
 
 //--------------------------------021-------------------------------------
 
-function afiseazaNoLoop(x){
+function afiseazaNoLoop(x) {
   console.log(x);
   console.log(typeof x);
-  document.write((x)+"-");
-  if(x!=0) {
-      afiseazaNoLoop(x-1);
-  }
-  else{
+  document.write((x) + "-");
+  if (x != 0) {
+    afiseazaNoLoop(x - 1);
+  } else {
     return x;
   }
 };
 afiseazaNoLoop(10);
+document.write("<br>");
+
+//--------------------------------022-------------------------------------
+
+var i;
+var x;
+
+function fizzBuzz(x) {
+  for (i = 1; i <= x; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      document.write("FizzBuzz");
+      document.write("<br>");
+    } else if (i % 3 === 0) {
+      document.write("Fizz");
+      document.write("<br>");
+    } else if (i % 5 === 0) {
+      document.write("Buzz");
+      document.write("<br>");
+    } else {
+      document.write(i);
+      document.write("<br>");
+    }
+  }
+};
+fizzBuzz(100);
