@@ -314,3 +314,64 @@ function fizzBuzz(x) {
   }
 };
 fizzBuzz(100);
+document.write("<br>");
+//--------------------------------022-------------------------------------
+
+var a = [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4]]]]];
+
+for (i = 0; i < a.length; i++) {
+  if (!a[i].length) {
+    document.write(a[i] + '<br/>');
+  } else {
+    console.log('aaaa', a[i]);
+    for (j = 0; j < a[i].length; j++) {
+
+      if (!a[i][j].length) {
+        document.write('****' + a[i][j] + '<br/>');
+      } else {
+        for (k = 0; k < a[i][j].length; k++) {
+          if (!Array.isArray(a[i][j][k])) {
+            document.write('********' + a[i][j][k] + '<br/>');
+          } else {
+            for (l = 0; l < a[i][j][k].length; l++) {
+              if (!Array.isArray(a[i][j][k][l])) {
+                document.write('************' + a[i][j][k][l] + '<br/>');
+              } else {
+                for (z = 0; z < a[i][j][k][l].length; z++) {
+                  document.write('****************' + a[i][j][k][l][z] + '<br/>');
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+var a = [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, ]]]];
+
+a.forEach(function(item, index, array) {
+      if (!Array.isArray(item)) {
+        document.write(item + '<br/>');
+      } else {
+        item.forEach(function(itemB) {
+          if (!Array.isArray(itemB)) {
+            document.write('****' + itemB + '<br/>');
+          } else {
+            itemB.forEach(function(itemC) {
+              if (!Array.isArray(itemC)) {
+                document.write('********' + itemC + '<br/>');
+              }else{
+                    itemC.forEach(function(itemD) {
+                      if (!Array.isArray(itemD)) {
+                        document.write('************' + itemD + '<br/>');
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
+    });
