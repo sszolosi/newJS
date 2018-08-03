@@ -7,7 +7,6 @@ function changeImage() {
 //-----------------------------013--------------------------------
 
 
-
 //numeric
 var a = 5,
   b = 5,
@@ -194,6 +193,7 @@ console.log(unParametru(5));
 console.log(unParametru("text"));
 
 //--------------------------------017-------------------------------------
+
 var a = 3601;
 var i = 0;
 number = [];
@@ -315,7 +315,7 @@ function fizzBuzz(x) {
 };
 fizzBuzz(100);
 document.write("<br>");
-//--------------------------------022-------------------------------------
+//--------------------------------023-------------------------------------
 
 var a = [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4]]]]];
 
@@ -353,25 +353,47 @@ for (i = 0; i < a.length; i++) {
 var a = [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, [1, 2, 3, 4, ]]]];
 
 a.forEach(function(item, index, array) {
-      if (!Array.isArray(item)) {
-        document.write(item + '<br/>');
+  if (!Array.isArray(item)) {
+    document.write(item + '<br/>');
+  } else {
+    item.forEach(function(itemB) {
+      if (!Array.isArray(itemB)) {
+        document.write('****' + itemB + '<br/>');
       } else {
-        item.forEach(function(itemB) {
-          if (!Array.isArray(itemB)) {
-            document.write('****' + itemB + '<br/>');
+        itemB.forEach(function(itemC) {
+          if (!Array.isArray(itemC)) {
+            document.write('********' + itemC + '<br/>');
           } else {
-            itemB.forEach(function(itemC) {
-              if (!Array.isArray(itemC)) {
-                document.write('********' + itemC + '<br/>');
-              }else{
-                    itemC.forEach(function(itemD) {
-                      if (!Array.isArray(itemD)) {
-                        document.write('************' + itemD + '<br/>');
-                  }
-                });
+            itemC.forEach(function(itemD) {
+              if (!Array.isArray(itemD)) {
+                document.write('************' + itemD + '<br/>');
               }
             });
           }
         });
       }
     });
+  }
+});
+
+//--------------------------------024-------------------------------------
+
+
+
+
+
+
+//--------------------------------025-------------------------------------
+
+function removeElement() {
+  var parent = document.getElementById("remove");
+  var child = document.getElementById("p1");
+  parent.removeChild(child);
+};
+
+
+function replaceLinks() {
+
+  document.getElementById("change-link1").href = "http://www.github.com";
+  document.getElementById("change-link2").href = "http://wwww.developer.mozilla.org";
+};
