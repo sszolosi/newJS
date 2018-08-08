@@ -380,7 +380,7 @@ a.forEach(function(item, index, array) {
 let str = '12341234 56781234 91231234 45672222 12341234 56781234 91231234 45672222';
 
 
-let newArray = str.replace( /\n/g, " " ).split( " " );
+let newArray = str.replace(/\n/g, " ").split(" ");
 console.log(newArray);
 console.log(typeof newArray);
 document.write(newArray + "<br/><br/>");
@@ -405,21 +405,33 @@ function replaceLinks() {
 
 //--------------------------------026-------------------------------------
 
-myArr = [1,2,7,5,10,20,15,6,4,3,0];
+myArr = [1, 2, 7, 5, 10, 20, 15, 6, 4, 3, 0];
 
 myArr.sort();
-document.write(myArr +"  - NU E OK!!!!"+ "<br/><br/>");
+document.write(myArr + "  - NU E OK!!!!" + "<br/><br/>");
 
-myArr = [1,2,7,5,10,20,15,6,4,3,0];
+myArr = [1, 2, 7, 5, 10, 20, 15, 6, 4, 3, 0];
 myArr.sort(
-  function(a,b){
-    return a-b;
-});
-document.write("Ordine crescatoare: "+myArr + "<br/><br/>");
+  function(a, b) {
+    return a - b;
+  });
+document.write("Ordine crescatoare: " + myArr + "<br/><br/>");
 
-myArr = [1,2,7,5,10,20,15,6,4,3,0];
+myArr = [1, 2, 7, 5, 10, 20, 15, 6, 4, 3, 0];
 myArr.sort(
-  function(a,b){
-    return b-a;
-});
-document.write("Ordine descrescatoare: "+myArr + "<br/><br/>");
+  function(a, b) {
+    return b - a;
+  });
+document.write("Ordine descrescatoare: " + myArr + "<br/><br/>");
+
+//--------------------------------027-------------------------------------
+
+let myObj = {
+  "preNume": "Alexandru",
+  "ocupatie": "programator junior",
+  "companie": "Fortech S.R.L."
+};
+
+document.getElementById("prenume").innerHTML = `<strong style="font-size:18px";><p>Prenume: </strong> ${myObj.preNume}</p>`;
+document.getElementById("ocupatie").innerHTML = `<strong style="font-size:18px";><p>Ocupatie: </strong>${myObj.ocupatie}</p>`;
+document.getElementById("companie").innerHTML = `<strong style="font-size:18px";><p>Companie: </strong>${myObj.companie}</p>`;
