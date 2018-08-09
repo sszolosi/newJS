@@ -435,3 +435,30 @@ let myObj = {
 document.getElementById("prenume").innerHTML = `<strong style="font-size:18px";><p>Prenume: </strong> ${myObj.preNume}</p>`;
 document.getElementById("ocupatie").innerHTML = `<strong style="font-size:18px";><p>Ocupatie: </strong>${myObj.ocupatie}</p>`;
 document.getElementById("companie").innerHTML = `<strong style="font-size:18px";><p>Companie: </strong>${myObj.companie}</p>`;
+
+//--------------------------------028-------------------------------------
+
+let angajati = [
+ {
+ "preNume": "Alexandru",
+ "ocupatie":"programator junior",
+ "companie": "Fortech S.R.L."
+ },
+ {
+  "preNume": "Sandor",
+  "ocupatie":"customer support",
+  "companie": "MyWebGrocer"
+  }
+];
+
+function listaAngajati(lista){
+ return `
+ <i><p><b style="font-size:18px";>Prenume: </b> ${lista.preNume}</p>
+ <p><b style="font-size:18px";>Ocupatie: </b> ${lista.ocupatie}</p>
+ <p><b style="font-size:18px";>Companie </b> ${lista.companie}</p></i></br>
+ `
+};
+
+document.getElementById("angajati").innerHTML = `
+${angajati.map(listaAngajati).join("")}
+`;
